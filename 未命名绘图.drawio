@@ -1,34 +1,49 @@
-<mxfile host="app.diagrams.net" modified="2024-02-19T03:27:51.901Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="Oz6DnjeSCER1so_DUHpu" version="23.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-19T03:47:19.083Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="isjZsCYy5Slv17Pb2EGZ" version="23.1.4" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="1016" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="dNxyNK7c78bLwvsdeMH5-19" value="Synergy L1" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;" parent="1" vertex="1">
-          <mxGeometry x="10" y="120" width="790" height="710" as="geometry">
+          <mxGeometry x="10" y="120" width="790" height="750" as="geometry">
             <mxRectangle x="120" y="120" width="40" height="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-20" value="LA / VSPA Init" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
-          <mxGeometry x="20" width="770" height="270" as="geometry" />
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-20" value="LA / VSPA Init" style="swimlane;html=1;startSize=20;horizontal=0;swimlaneFillColor=default;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
+          <mxGeometry x="20" width="770" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="a2PyN4hXEWRtEeo-WJ3X-2" value="yami" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
-          <mxGeometry x="40" width="480" height="80" as="geometry" />
+        <mxCell id="a2PyN4hXEWRtEeo-WJ3X-2" value="yami.ko" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#FFFFFF;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
+          <mxGeometry x="40" y="10" width="497" height="63" as="geometry" />
         </mxCell>
-        <mxCell id="a2PyN4hXEWRtEeo-WJ3X-3" value="run_yami.sh&lt;br&gt;insmod yami.ko scratch_buf_size=0x40000000 scratch_buf_phys_addr=0x234000000" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="a2PyN4hXEWRtEeo-WJ3X-2">
-          <mxGeometry x="10" y="30" width="480" height="40" as="geometry" />
+        <mxCell id="a2PyN4hXEWRtEeo-WJ3X-3" value="run_yami.sh&lt;br&gt;+ insmod yami.ko scratch_buf_size=0x40000000 scratch_buf_phys_addr=0x234000000" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="a2PyN4hXEWRtEeo-WJ3X-2">
+          <mxGeometry x="7" y="23" width="490" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="a2PyN4hXEWRtEeo-WJ3X-5" value="yami" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
-          <mxGeometry x="40" y="110" width="480" height="80" as="geometry" />
+        <mxCell id="a2PyN4hXEWRtEeo-WJ3X-5" value="rfController" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=default;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
+          <mxGeometry x="40" y="90" width="580" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="a2PyN4hXEWRtEeo-WJ3X-6" value="run_yami.sh&lt;br&gt;insmod yami.ko scratch_buf_size=0x40000000 scratch_buf_phys_addr=0x234000000" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="a2PyN4hXEWRtEeo-WJ3X-5">
-          <mxGeometry x="10" y="30" width="480" height="40" as="geometry" />
+        <mxCell id="a2PyN4hXEWRtEeo-WJ3X-6" value="taskset -c 1 /opt/run/synergy_stack/synergy_rfctrl/bin/rfController -c /etc/delta/rf_config_file &amp;gt; /dev/null &amp;amp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="a2PyN4hXEWRtEeo-WJ3X-5">
+          <mxGeometry x="5" y="23" width="570" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-21" value="Lane 2" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
-          <mxGeometry x="20" y="270" width="770" height="190" as="geometry" />
+        <mxCell id="a2PyN4hXEWRtEeo-WJ3X-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-20" source="a2PyN4hXEWRtEeo-WJ3X-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="90" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="90" />
+              <mxPoint x="281" y="90" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-22" value="Lane 3" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
-          <mxGeometry x="20" y="460" width="770" height="250" as="geometry" />
+        <mxCell id="a2PyN4hXEWRtEeo-WJ3X-8" value="rf_init.sh" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=default;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
+          <mxGeometry x="40" y="160" width="580" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="a2PyN4hXEWRtEeo-WJ3X-9" value="rfc_rfCtrCmd. ..&lt;br&gt;rfc_rfCtrCmd 296 0 =&amp;gt; 7D1S2U (10F BSP test)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1 =&amp;gt; 3D1S1U (8F Protocol test)&lt;br&gt;rfc_rfCtCmd 278 2700000 (10F BSP test)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;2702784 (8F Protocol test)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="a2PyN4hXEWRtEeo-WJ3X-8">
+          <mxGeometry x="5" y="13" width="290" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-21" value="Lane 2" style="swimlane;html=1;startSize=20;horizontal=0;swimlaneFillColor=default;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
+          <mxGeometry x="20" y="310" width="770" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-22" value="Lane 3" style="swimlane;html=1;startSize=20;horizontal=0;swimlaneFillColor=default;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
+          <mxGeometry x="20" y="500" width="770" height="250" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
