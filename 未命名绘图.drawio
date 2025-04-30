@@ -16,13 +16,13 @@
             <mxPoint x="301" y="1362" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="R7NFQL8OenFDBhiJxI_t-0" value="LED Status Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="R7NFQL8OenFDBhiJxI_t-0" value="LED Controller" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="657.5" y="89" width="132" height="47" as="geometry" />
         </mxCell>
         <mxCell id="R7NFQL8OenFDBhiJxI_t-2" value="System Mointor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=none;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="865" y="89" width="141" height="47" as="geometry" />
+          <mxGeometry x="60.5" y="52" width="141" height="47" as="geometry" />
         </mxCell>
-        <mxCell id="R7NFQL8OenFDBhiJxI_t-3" value="Alarm Status Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="R7NFQL8OenFDBhiJxI_t-3" value="Alarm Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="439.5" y="89" width="136" height="47" as="geometry" />
         </mxCell>
         <mxCell id="R7NFQL8OenFDBhiJxI_t-4" value="Platform Agent" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -48,12 +48,6 @@
         </mxCell>
         <mxCell id="R7NFQL8OenFDBhiJxI_t-9" value="&lt;font&gt;PLATFORM_STATE_IDLE&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#FFFFFF;strokeColor=#BD7000;fontSize=15;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="8" y="132" width="192" height="28" as="geometry" />
-        </mxCell>
-        <mxCell id="R7NFQL8OenFDBhiJxI_t-10" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="942" y="541" as="sourcePoint" />
-            <mxPoint x="941.5" y="136" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="R7NFQL8OenFDBhiJxI_t-11" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#0000FF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -263,7 +257,7 @@
           <mxGeometry x="1157" y="140" width="107" height="59" as="geometry" />
         </mxCell>
         <mxCell id="R7NFQL8OenFDBhiJxI_t-77" value="Mointor Init&lt;br&gt;- Task Init" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;fontColor=#000000;strokeColor=default;fontSize=14;align=left;dashed=1;dashPattern=8 8;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="947" y="140" width="107" height="42" as="geometry" />
+          <mxGeometry x="-71" y="40" width="107" height="42" as="geometry" />
         </mxCell>
         <mxCell id="R7NFQL8OenFDBhiJxI_t-78" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#0000FF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
